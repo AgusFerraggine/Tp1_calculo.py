@@ -32,7 +32,8 @@ for student in students:
      notas_validas.append(nota)
     else:
       notas_invalidas.append(nota)
-      print("error en la nota de",nombre,": " "nota inválida ",notas_invalidas)
+  if notas_invalidas:
+    print("error en la nota de",nombre,": " "nota inválida ",notas_invalidas)
 
 #verifico si la lista 'notas validas' tiene elementos en ella para calcular el promedio del alumno
   if notas_validas:
@@ -40,3 +41,5 @@ for student in students:
     print("nota final = ",promedio)
   else:
     print(nombre," no tiene notas válidas para calcular su promedio.")
+  
+  print("--------------------------------")
